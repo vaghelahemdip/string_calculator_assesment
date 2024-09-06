@@ -13,13 +13,11 @@ export class AppComponent {
   errorMessage: string | null = null;
 
   calculateSum(): void {
-    // Reset error message
     this.errorMessage = null;
 
-    // Split the input string by comma and convert to array of numbers
     const numbersArray = this.numbersInput.split(',')
       .map(num => num.trim()) // Trim any extra spaces
-      .filter(num => !isNaN(Number(num))) // Filter out non-numeric values
+      .filter(num => !isNaN(Number(num))) 
       .map(num => Number(num)); // Convert to numbers
 
     // Check for negative numbers

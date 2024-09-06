@@ -1,8 +1,8 @@
 <div class="container">
-  <h1>Comma-Separated Numbers Sum</h1>
+  <h1>String Calculator</h1>
   <form (ngSubmit)="calculateSum()">
     <label for="numbers">Enter numbers </label>
-    <input id="numbers" [(ngModel)]="numbersInput" name="numbers" placeholder="e.g. 1,2,3,4,5" />
+    <input id="numbers" [(ngModel)]="numbersInput" name="numbers" placeholder="e.g. 1,2,3" />
     <button type="submit">Calculate Sum</button>
   </form>
   <div *ngIf="errorMessage" class="error">
